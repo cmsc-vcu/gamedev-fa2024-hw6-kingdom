@@ -4481,6 +4481,11 @@ MonoBehaviour:
   maxHealth: 100
   gameOverPanel: {fileID: 1760212864}
   restartButton: {fileID: 206414746}
+  attackRange: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  attackDamage: 10
 --- !u!50 &2075589819
 Rigidbody2D:
   serializedVersion: 4
@@ -4572,7 +4577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327bab91a23bb400190c12ff8587d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 100
   gameOverPanel: {fileID: 1760212864}
 --- !u!1 &2081568570 stripped
 GameObject:

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5497860573166917030}
   - component: {fileID: 971803859468214381}
   - component: {fileID: 3786995224560860997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccaa47b5564fb45b08d71702fa6c4ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1.5
+  speed: 3
   damage: 10
-  moveSpeed: 2
+  attackRange: 1.5
+  health: 10

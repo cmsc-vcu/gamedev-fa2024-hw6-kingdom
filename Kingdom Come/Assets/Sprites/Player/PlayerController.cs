@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public Button restartButton; // Button to restart the game
     public float attackRange = 1f; // Range for attack detection
     public LayerMask enemyLayer; // LayerMask to identify enemy objects
+    public int attackDamage = 10; // Damage dealt to enemies
 
     private Animator animator;
     private Rigidbody2D rb;
@@ -58,18 +59,18 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Attack()
-{
-    animator.SetTrigger("attack"); // Trigger the attack animation
-    nextAttackTime = Time.time + attackCooldown; // Set the time for the next attack
-
-    // Check for enemies in attack range
-    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
-    foreach (Collider2D enemy in hitEnemies)
     {
-        enemy.GetComponent<Enemy>().GotHit(10); // Call the GotHit method on the enemy
-        Debug.Log("Attacked enemy for 10 damage."); // Optional debug message
+        animator.SetTrigger("attack"); // Trigger the attack animation
+        nextAttackTime = Time.time + attackCooldown; // Set the time for the next attack
+
+        // Check for enemies in attack range
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<Enemy>().GotHit(attackDamage); // Call the GotHit method on the enemy
+            Debug.Log($"Attacked enemy for {attackDamage} damage."); // Optional debug message
+        }
     }
-}
 
     // Call this method when the player is hurt
     public void Hurt(int damage)
