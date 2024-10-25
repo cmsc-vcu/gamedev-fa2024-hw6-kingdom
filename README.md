@@ -1,50 +1,42 @@
-# Elevator Wipeout - Sidecars and PBRs - Fall 2024
+# Kingdom Come - Fall 2024
 
-Elevator Wipeout is a save-the-world game where the player does all they can to prevent bad guys from destroying a space elevator.  If the bad guys win, the earth
-is destroyed in a spectacular, slow-motion extravaganza.
+"Kingdom Come" is an action-packed adventure game set in a mystical world where a lone samurai battles against an army of relentless skeleton warriors. Players will experience fast-paced combat, skillful maneuvers, and an engaging atmosphere as they navigate through various terrains and defeat enemies.
 
 ## Authors
 
-- John Leonard (jdleonard@vcu.edu)
-- Jason Bennett (jebennett@vcu.edu)
+- Shane Simes(simess@vcu.edu)
 
 ## Game Description
 
-Provide more details of the game.  Discuss any unique game play features.  Why is
-this game different from others?  What is the goal for playing?
+In "Kingdom Come," you take on the role of a skilled samurai tasked with defeating an undead army that threatens your land. With fluid combat mechanics and strategic gameplay, players will engage in intense battles against skeletons using a variety of attacks and abilities.
+
+How to Play
+Movement: Use the arrow keys or WASD to navigate your samurai through the environment.
+Attack: Press the spacebar to perform melee attacks on enemies.
 
 ## Important Links
 
-- Game URL: < ... >
-- GITHUB URL: < ... >
-- Gameplay Video URL: < ... >
-- Google Doc writeup: < ... >
+- Game URL: [< ... >](https://play.unity.com/en/games/7aa10930-0524-4cf4-b1b8-cf2192716bba/kingdom)
+- GITHUB URL: [< ... >](https://github.com/cmsc-vcu/gamedev-fa2024-hw6-kingdom/tree/main)
+- Gameplay Video URL: [< ... >](https://drive.google.com/file/d/1_5hjLgSYk78tqaGM9E1g2jvEEYcZ7Jd1/view?usp=sharing)
+- Google Doc writeup: [< ... >](https://docs.google.com/document/d/1YLazNn3VnbB0HI7JD9i9i94-LCBTQiOibmkmSlmtcjA/edit?usp=sharing)
 
 ## Files in the repository
 
-./unity/ - this folder contains the Unity game files associated with this game.
-
-./website/ - this folder contains files associated with the *gh-pages* created for this game.
-
-./docs/ - Don't edit files in this folder directly.  Edit the source documents in the *./website* folder, then use `quarto` to render the documents to HTML and store them in the *./docs* folder.
-
-
-## How to modify this README.md
-
-Certainly you want to customize the info above this section to make it your own. But, please don't stop there.
-
-To learn more about writing good README.md files, see:
-
-<https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/>
-
-This is a scaffold project. We’ll be providing scaffolds throughout the
-semester to get you working faster, and to make grading much easier for
-the TA team.
-
-This repository supports Homework 6. Here are the homework specs and
-tasks:
-
-<https://virginiacommonwealth.instructure.com/courses/105808/assignments/952983>
-
-Good luck!
-
+/Kingdom-Come-Fall-2024
+├── /docs
+│   ├── README.md          # Documentation about the game, its mechanics, and features.
+│   ├── GameplayGuide.md   # A detailed guide on how to play, including controls and strategies.
+│   └── Changelog.md       # Record of changes made to the game over time, including updates and fixes.
+│
+├── /kingdom_come
+│   ├── Assets              # All game assets, including sprites, audio, and animations.
+│   ├── Scripts             # All game scripts, organized by functionality.
+│   ├── Scenes              # Unity scenes for the game levels.
+│   └── Prefabs             # Prefabs for reusable game objects, such as enemies and power-ups.
+│
+└── /website
+    ├── index.html         # Main HTML file for the game’s website.
+    ├── style.css          # CSS file for styling the website.
+    ├── script.js          # JavaScript file for any interactive elements on the website.
+    └── assets    
